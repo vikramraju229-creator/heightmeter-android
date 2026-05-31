@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/camera_fragment">
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.heightmeter.app.ui.camera.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera">
+
+        <action
+            android:id="@+id/action_camera_to_result"
+            app:destination="@id/result_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_fragment"
+        android:name="com.heightmeter.app.ui.result.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result">
+
+        <argument
+            android:name="heightCm"
+            app:argType="float" />
+
+        <argument
+            android:name="accuracy"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_result_to_camera"
+            app:destination="@id/camera_fragment"
+            app:popUpTo="@id/camera_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/history_fragment"
+        android:name="com.heightmeter.app.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+</navigation>

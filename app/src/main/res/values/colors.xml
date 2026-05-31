@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF1976D2</color>
+    <color name="colorPrimaryDark">#FF1565C0</color>
+    <color name="colorAccent">#FF448AFF</color>
+    <color name="colorSurface">#FFFFFFFF</color>
+    <color name="colorOnSurface">#FF1C1B1F</color>
+
+    <!-- Pose overlay colors -->
+    <color name="skeleton_line">#80FFFFFF</color>
+    <color name="landmark_detected">#FF00FF00</color>
+    <color name="landmark_missing">#80FF0000</color>
+    <color name="guide_overlay">#40000000</color>
+    <color name="guide_text">#FFFFFFFF</color>
+    <color name="confidence_high">#FF4CAF50</color>
+    <color name="confidence_medium">#FFFFC107</color>
+    <color name="confidence_low">#FFF44336</color>
+
+    <!-- Result screen -->
+    <color name="accuracy_excellent">#FF4CAF50</color>
+    <color name="accuracy_good">#FF2196F3</color>
+    <color name="accuracy_fair">#FFFF9800</color>
+</resources>

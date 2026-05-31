@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Height Meter</string>
+
+    <!-- Camera Screen -->
+    <string name="position_guide">Position yourself in frame</string>
+    <string name="confidence_label">Confidence</string>
+    <string name="capture">Capture</string>
+    <string name="detecting">Detecting…</string>
+    <string name="no_person_detected">No person detected</string>
+    <string name="head_detected">Head detected ✓</string>
+    <string name="feet_detected">Feet detected ✓</string>
+    <string name="history">History</string>
+
+    <!-- Result Screen -->
+    <string name="height_result">Height Result</string>
+    <string name="height_cm">%1$s cm</string>
+    <string name="height_inches">%1$s ft %2$s in</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="fair">Fair</string>
+    <string name="enter_name">Enter person\'s name</string>
+    <string name="save">Save</string>
+    <string name="remeasure">Re-measure</string>
+
+    <!-- History Screen -->
+    <string name="title_history">Measurement History</string>
+    <string name="no_measurements">No measurements yet</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="delete_confirm">Delete this measurement?</string>
+
+    <!-- Share text -->
+    <string name="share_text">Height Measurement - %1$s: %2$s cm (%3$s) - %4$s</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_camera">Camera error occurred</string>
+    <string name="permission_camera">Camera permission is required to measure height</string>
+</resources>
