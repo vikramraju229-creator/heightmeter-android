@@ -44,7 +44,7 @@ class CameraFallback(
 
     private fun bindPreview(provider: ProcessCameraProvider) {
         val preview = Preview.Builder().build().also {
-            it.surfaceProvider = previewView.surfaceProvider
+            it.setSurfaceProvider(previewView.surfaceProvider)
         }
         val selector = CameraSelector.Builder()
             .requireLensFacing(CameraSelector.LENS_FACING_BACK)

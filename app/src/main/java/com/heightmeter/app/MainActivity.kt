@@ -548,7 +548,7 @@ class MainActivity : AppCompatActivity() {
         val screenshotPath = saveScreenshotToFile(bitmap)
 
         // Launch coroutine to save and handle result
-        androidx.lifecycle.lifecycleScope.launch {
+        lifecycleScope.launch {
             val success = viewModel.saveMeasurement(screenshotPath)
             if (success) {
                 Toast.makeText(this@MainActivity, "Measurement saved!", Toast.LENGTH_SHORT).show()
