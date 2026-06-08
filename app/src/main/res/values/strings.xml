@@ -1,42 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Height Meter</string>
+    <string name="app_name">AR Measure</string>
 
-    <!-- Camera Screen -->
-    <string name="position_guide">Position yourself in frame</string>
-    <string name="confidence_label">Confidence</string>
-    <string name="capture">Capture</string>
-    <string name="detecting">Detecting…</string>
-    <string name="no_person_detected">No person detected</string>
-    <string name="head_detected">Head detected ✓</string>
-    <string name="feet_detected">Feet detected ✓</string>
-    <string name="history">History</string>
+    <!-- Main Camera Screen -->
+    <string name="tool_name_line">Line</string>
+    <string name="tool_name_height">Height</string>
+    <string name="tool_name_angles">Angles</string>
+    <string name="tool_name_distance">Distance</string>
+    <string name="tool_name_polyline">Polyline</string>
+    <string name="tool_name_polyline_smooth">Polyline Smooth</string>
+    <string name="tool_name_polygon">Polygon</string>
+    <string name="tool_name_poly_smooth">Poly Smooth</string>
+    <string name="tool_name_square">Square</string>
+    <string name="tool_name_rectangle">Rectangle</string>
+    <string name="tool_name_circle">Circle</string>
+    <string name="tool_name_volume">Volume</string>
+    <string name="tool_name_volume_smooth">Volume Smooth</string>
+    <string name="tool_name_cuboid">Cuboid</string>
+    <string name="tool_name_cube">Cube</string>
 
-    <!-- Result Screen -->
-    <string name="height_result">Height Result</string>
-    <string name="height_cm">%1$s cm</string>
-    <string name="height_inches">%1$s ft %2$s in</string>
-    <string name="accuracy">Accuracy</string>
-    <string name="excellent">Excellent</string>
-    <string name="good">Good</string>
-    <string name="fair">Fair</string>
-    <string name="enter_name">Enter person\'s name</string>
-    <string name="save">Save</string>
-    <string name="remeasure">Re-measure</string>
+    <string name="select_tool">Select Tool</string>
+    <string name="tap_to_place">Tap to place point</string>
+    <string name="btn_add_point">Add Point</string>
+    <string name="btn_delete_last">Delete Last</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_undo">Undo</string>
 
-    <!-- History Screen -->
-    <string name="title_history">Measurement History</string>
-    <string name="no_measurements">No measurements yet</string>
-    <string name="delete">Delete</string>
-    <string name="share">Share</string>
+    <!-- Units -->
+    <string name="unit_meters">meters</string>
+    <string name="unit_feet">feet</string>
+    <string name="unit_centimeters">cm</string>
+    <string name="unit_inches">inches</string>
+    <string name="unit_m">m</string>
+    <string name="unit_ft">ft</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_in">in</string>
+    <string name="unit_sq_m">m²</string>
+    <string name="unit_cu_m">m³</string>
+    <string name="unit_degrees">°</string>
+
+    <!-- Labels -->
+    <string name="label_distance">Distance</string>
+    <string name="label_height">Height</string>
+    <string name="label_angle">Angle</string>
+    <string name="label_area">Area</string>
+    <string name="label_perimeter">Perimeter</string>
+    <string name="label_volume">Volume</string>
+    <string name="label_radius">Radius</string>
+    <string name="label_diameter">Diameter</string>
+    <string name="label_circumference">Circumference</string>
+    <string name="label_side_length">Side</string>
+    <string name="label_width">Width</string>
+    <string name="label_length">Length</string>
+
+    <!-- Gallery -->
+    <string name="gallery_title">Measurement History</string>
+    <string name="no_measurements">No saved measurements</string>
     <string name="delete_confirm">Delete this measurement?</string>
-
-    <!-- Share text -->
-    <string name="share_text">Height Measurement - %1$s: %2$s cm (%3$s) - %4$s</string>
-
-    <!-- General -->
-    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
     <string name="cancel">Cancel</string>
-    <string name="error_camera">Camera error occurred</string>
-    <string name="permission_camera">Camera permission is required to measure height</string>
+    <string name="action_back">Navigate up</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_snap_to_surface">Snap to Surface</string>
+    <string name="settings_grid_overlay">Grid Overlay</string>
+    <string name="settings_line_thickness">Line Thickness</string>
+    <string name="settings_about">About AR Measure</string>
+
+    <!-- Permissions -->
+    <string name="camera_permission_rationale">Camera permission is required for AR measurement</string>
+    <string name="camera_permission_denied">Camera permission was denied. AR features will not work.</string>
+
+    <!-- Errors -->
+    <string name="error_ar_not_supported">ARCore is not supported on this device</string>
+    <string name="error_ar_cannot_track">Cannot track environment. Move device slowly.</string>
+    <string name="error_no_plane_detected">Point on a detected surface</string>
+
+    <!-- Measurement format -->
+    <string name="format_distance">%1$s %2$s</string>
+    <string name="format_area">%1$s %2$s</string>
+    <string name="format_volume">%1$s %2$s</string>
+    <string name="format_angle">%1$s°</string>
+    <string name="format_meters">%.2f m</string>
+    <string name="format_feet">%.2f ft</string>
+    <string name="format_centimeters">%.1f cm</string>
+    <string name="format_inches">%.1f in</string>
+    <string name="format_square_meters">%.2f m²</string>
+    <string name="format_cubic_meters">%.2f m³</string>
+    <string name="format_total">Total: %s</string>
 </resources>

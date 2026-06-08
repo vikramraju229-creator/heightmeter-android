@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF1976D2</color>
-    <color name="colorPrimaryDark">#FF1565C0</color>
-    <color name="colorAccent">#FF448AFF</color>
-    <color name="colorSurface">#FFFFFFFF</color>
-    <color name="colorOnSurface">#FF1C1B1F</color>
+    <!-- Primary colors - Yellow theme for AR measurement -->
+    <color name="colorPrimary">#FF1A1A2E</color>
+    <color name="colorPrimaryDark">#FF0F0F23</color>
+    <color name="colorAccent">#FFB800</color>
+    <color name="colorSurface">#FF1A1A2E</color>
+    <color name="colorOnSurface">#FFFFFFFF</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <color name="colorBackground">#FF000000</color>
 
-    <!-- Pose overlay colors -->
-    <color name="skeleton_line">#80FFFFFF</color>
-    <color name="landmark_detected">#FF00FF00</color>
-    <color name="landmark_missing">#80FF0000</color>
-    <color name="guide_overlay">#40000000</color>
-    <color name="guide_text">#FFFFFFFF</color>
-    <color name="confidence_high">#FF4CAF50</color>
-    <color name="confidence_medium">#FFFFC107</color>
-    <color name="confidence_low">#FFF44336</color>
+    <!-- AR Measurement UI colors -->
+    <color name="measurement_yellow">#FFFFB800</color>
+    <color name="measurement_yellow_dark">#FFCC9300</color>
+    <color name="measurement_label_bg">#FFFFB800</color>
+    <color name="measurement_label_text">#FFFFFFFF</color>
+    <color name="measurement_line">#FFFFB800</color>
+    <color name="measurement_point">#FFFFB800</color>
+    <color name="measurement_point_fill">#FF1A1A2E</color>
 
-    <!-- Result screen -->
-    <color name="accuracy_excellent">#FF4CAF50</color>
-    <color name="accuracy_good">#FF2196F3</color>
-    <color name="accuracy_fair">#FFFF9800</color>
+    <!-- Crosshair / Reticle -->
+    <color name="reticle">#FFFFFFFF</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_bg">#80000000</color>
+    <color name="toolbar_button_bg">#FFFFB800</color>
+    <color name="toolbar_button_icon">#FF1A1A2E</color>
+
+    <!-- Bottom sheet -->
+    <color name="bottom_sheet_bg">#FF1A1A2E</color>
+    <color name="tool_icon_bg">#FF2A2A4E</color>
+    <color name="tool_label">#FFFFFFFF</color>
+    <color name="tool_selected_border">#FFFFB800</color>
+
+    <!-- General -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+
+    <!-- Settings -->
+    <color name="settings_item_bg">#FF2A2A4E</color>
+    <color name="settings_divider">#FF3A3A5E</color>
 </resources>

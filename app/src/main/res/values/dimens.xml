@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_button_size">48dp</dimen>
+    <dimen name="toolbar_icon_size">24dp</dimen>
+
+    <!-- Bottom toolbar -->
+    <dimen name="bottom_toolbar_height">80dp</dimen>
+    <dimen name="bottom_button_size">56dp</dimen>
+    <dimen name="bottom_button_margin">16dp</dimen>
+
+    <!-- Reticle -->
+    <dimen name="reticle_size">4dp</dimen>
+    <dimen name="reticle_ring_size">24dp</dimen>
+
+    <!-- Tool grid -->
+    <dimen name="tool_item_size">72dp</dimen>
+    <dimen name="tool_icon_size">32dp</dimen>
+    <dimen name="tool_label_size">10sp</dimen>
+
+    <!-- Labels -->
+    <dimen name="label_badge_padding">8dp</dimen>
+    <dimen name="label_badge_corner">12dp</dimen>
+    <dimen name="label_text_size">14sp</dimen>
+    <dimen name="label_small_text_size">12sp</dimen>
+
+    <!-- Gallery -->
+    <dimen name="gallery_item_height">240dp</dimen>
+    <dimen name="gallery_thumbnail_size">160dp</dimen>
+    <dimen name="gallery_card_margin">8dp</dimen>
+
+    <!-- General -->
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+</resources>

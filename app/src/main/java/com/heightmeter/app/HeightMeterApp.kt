@@ -3,7 +3,10 @@ package com.heightmeter.app
 import android.app.Application
 
 /**
- * Application class for Height Meter.
- * Initializes global resources if needed.
+ * Application class for AR Measurement Toolkit.
  */
-class HeightMeterApp : Application()
+class HeightMeterApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+    }
+}
