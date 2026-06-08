@@ -30,8 +30,25 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Show environment info
+        run: |
+          echo "Java version:"
+          java -version 2>&1
+          echo "---"
+          echo "ANDROID_HOME: $ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT: $ANDROID_SDK_ROOT"
+          ls "$ANDROID_HOME/platforms/" 2>/dev/null || echo "No platforms dir"
+          ls "$ANDROID_HOME/build-tools/" 2>/dev/null || echo "No build-tools dir"
+
       - name: Run lint
-        run: ./gradlew lint --no-daemon
+        run: ./gradlew lint --no-daemon --stacktrace 2>&1 | tee /tmp/lint_output.log
+
+      - name: Upload lint log (if failed)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lint-log
+          path: /tmp/lint_output.log
 
   test:
     name: Unit tests
@@ -51,8 +68,25 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Check compilation
+        run: ./gradlew compileDebugKotlin --no-daemon --stacktrace 2>&1 | tee /tmp/compile_output.log
+
+      - name: Upload compile log (if failed)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compile-log
+          path: /tmp/compile_output.log
+
       - name: Run unit tests
-        run: ./gradlew testDebugUnitTest --no-daemon
+        run: ./gradlew testDebugUnitTest --no-daemon --stacktrace 2>&1 | tee /tmp/test_output.log
+
+      - name: Upload test logs (if failed)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-log
+          path: /tmp/test_output.log
 
       - name: Upload test results
         if: always()
@@ -80,8 +114,26 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Show environment info
+        run: |
+          echo "ANDROID_HOME: $ANDROID_HOME"
+          ls "$ANDROID_HOME/platforms/" 2>/dev/null || echo "No platforms dir"
+          ls "$ANDROID_HOME/build-tools/" 2>/dev/null || echo "No build-tools dir"
+          echo "--- Gradle wrapper properties:"
+          cat gradle/wrapper/gradle-wrapper.properties
+
+      - name: Accept SDK licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses 2>/dev/null || true
+
       - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee /tmp/build_output.log
+
+      - name: Upload build log (if failed)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: /tmp/build_output.log
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
